@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Active Membership</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* side tab  */
+        .sidebar {
+    background-color: #007bff;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar hr {
+    border-color: #0056b3;
+    margin: 20px 0;
+}
+
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #007bff 0%, rgba(0, 123, 255, 0) 100%);
+    z-index: -1;
+}
+
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+
+
+main {
+    margin: 20px;
+}
+.active-membership {
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 280px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.active-membership h2 {
+    margin-bottom: 20px;
+}
+
+.active-membership table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.active-membership th, .active-membership td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.active-membership th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.active-membership tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <nav class="sidebar">
+        <ul>
+            <li><a href="/user/master-list-of-books">Master List of Books</a></li>
+            <li><a href="/user/master-list-of-memberships">Master List of Memberships</a></li>
+            <li><a href="/user/active-issues">Active Issues</a></li>
+            <li><a href="/user/overdue-returns">Overdue Returns</a></li>
+            <li><a href="/user/issue-request">Issue Request</a></li>
+            <li><a href="/user/transaction">Transaction</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="active-membership">
+            <h2>List of Active Membership</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Membership ID</th>
+                        <th>Name of Member</th>
+                        <th>Contact Number</th>
+                        <th>Contact Address</th>
+                        <th>Aadhar Card No</th>
+                        <th>Start Date of Membership</th>
+                        <th>Status</th>
+                        <th>Amount Pending Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>123-456-7890</td>
+                        <td>123 Main St, City</td>
+                        <td>1234-5678-9012</td>
+                        <td>2023-09-01</td>
+                        <td>Active</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td>987-654-3210</td>
+                        <td>456 Elm St, Town</td>
+                        <td>5678-9012-3456</td>
+                        <td>2023-08-25</td>
+                        <td>Active</td>
+                        <td>$5.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
